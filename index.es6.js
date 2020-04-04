@@ -1,4 +1,5 @@
-export default md => {
+// export.default = ...  <-- causes slightly different behaviour: MarkDownIt.use(require(plugin).default);
+module.exports = md => {
   const originalRender = md.render
 
   md.render = function (src, env = {}) {

@@ -5,10 +5,10 @@
   "compact": false,
   "retainLines": false,
   "presets": [
-    ["@gerhobbelt/babel-preset-env", {
+    ["@babel/preset-env", {
       "targets": {
-        "browsers": ["last 2 versions", "safari >= 7"],
-        "node": "4.0"
+        "browsers": ["> 2%"],
+        "node": "8.0"
       }
     }]
   ]

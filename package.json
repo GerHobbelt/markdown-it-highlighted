@@ -28,11 +28,11 @@
     "pub": "npm publish --access public"
   },
   "devDependencies": {
-    "@gerhobbelt/babel-cli": "7.0.0-14",
-    "@gerhobbelt/babel-core": "^7.0.0-14",
-    "@gerhobbelt/babel-node": "^7.0.0-14",
-    "@gerhobbelt/babel-preset-env": "^7.0.0-14",
-    "@gerhobbelt/markdown-it": "8.4.2-24",
-    "standard": "12.0.1"
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.9.0",
+    "@gerhobbelt/markdown-it": "10.0.0-31",
+    "standard": "14.3.3"
   }
 }
