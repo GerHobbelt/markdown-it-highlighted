@@ -1,6 +1,6 @@
 {
   "name": "@gerhobbelt/markdown-it-highlighted",
-  "version": "1.0.1-2",
+  "version": "1.0.1-3",
   "description": "Whether code was highlighted during markdown-it rendering.",
   "keywords": [
     "markdown-it-plugin"
