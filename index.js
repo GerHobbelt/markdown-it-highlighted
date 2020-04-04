@@ -1,7 +1,6 @@
 "use strict";
 
-// export.default = ...  <-- causes slightly different behaviour: MarkDownIt.use(require(plugin).default);
-module.exports = md => {
+exports.default = md => {
   const originalRender = md.render;
 
   md.render = function (src, env = {}) {
@@ -19,3 +18,5 @@ module.exports = md => {
     return html;
   };
 };
+
+module.exports = exports.default;

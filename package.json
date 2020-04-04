@@ -27,6 +27,7 @@
   "scripts": {
     "build": "babel index.es6.js -o index.js",
     "lint": "standard index.es6.js test.js",
+    "fix": "standard --fix index.es6.js test.js",
     "prepublish-orig": "npm run build",
     "test": "npm run lint && npm run build && babel-node test.js",
     "pub": "npm publish --access public"
@@ -36,7 +37,31 @@
     "@babel/core": "7.9.0",
     "@babel/node": "7.8.7",
     "@babel/preset-env": "7.9.0",
+    "babel-plugin-add-module-exports": "1.0.2",
     "@gerhobbelt/markdown-it": "10.0.0-31",
     "standard": "14.3.3"
+  },
+  "babel": {
+    "plugins": [
+      "babel-plugin-add-module-exports"
+    ],
+    "ignore": [
+      "node_modules/**/*.js"
+    ],
+    "compact": false,
+    "retainLines": false,
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "> 2%"
+            ],
+            "node": "8.0"
+          }
+        }
+      ]
+    ]
   }
 }
