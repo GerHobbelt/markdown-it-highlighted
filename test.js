@@ -14,3 +14,5 @@ strictEqual(env.highlighted, true)
 
 parser.render('# Hello, world!', env)
 strictEqual(env.highlighted, false)
+
+console.log('all tests done')

@@ -14,8 +14,12 @@
   "files": [
     "README.md",
     "UNLICENSE",
-    "index.js"
+    "index.js",
+    "index.es6.js"
   ],
+  "type": "module",
+  "main": "index.js",
+  "module": "index.es6.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/valeriangalliat/markdown-it-highlighted.git"
